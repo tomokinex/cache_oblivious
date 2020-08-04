@@ -1,8 +1,8 @@
-# cross=~/opt/gcc/riscv64-linux/7.1.1/bin/riscv64-unknown-linux-gnu-gcc
-# cross=~/opt/gcc/riscv64-elf/7.1.1/bin/riscv64-unknown-elf-gcc
+#cross=~/opt/gcc/riscv64-linux/7.1.1/bin/riscv64-unknown-linux-gnu-gcc
+#cross=~/opt/gcc/riscv64-elf/7.1.1/bin/riscv64-unknown-elf-gcc
 
 ifdef cross
-	CPP=cross
+	CPP=$(cross)
 else
 	CPP=gcc
 endif
